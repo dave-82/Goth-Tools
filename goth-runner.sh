@@ -9,6 +9,8 @@ do
     echo "|2. show-files  |"
     echo "|3. exit        |"
     echo "|===============|"
+    echo "|   enter 1-3   |"
+    echo "|===============|"
 
     read -r choice
 

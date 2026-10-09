@@ -15,19 +15,35 @@ do
     echo "would you like to type in a command to run?"
     read -r answer
 
-    if [ "$answer" = "y" ]; then 
+    if [ "$answer" = "y" ]; 
+    then 
 
         echo "what command would you like to type?"
         read -r command
 
         echo "running command!"
 
-        bash -c "$command"
+        bash -c "$command" 
+        exit_code=$?
+        
+        if [ "$exit_code" -eq 0 ];
+        then
 
-        echo "command ran!"
+            echo "command ran!"
 
-    elif [ "$answer" = "n" ]; then
-        echo "adios!"
+        else
+
+            echo "error: command didnt run." 
+            echo "exit code $exit_code"
+            echo "error code: 00001"
+        
+        fi
+
+        
+
+    elif [ "$answer" = "n" ]; 
+    then
+        echo "Thanks for using GOTH tools!"
         exit
 
 

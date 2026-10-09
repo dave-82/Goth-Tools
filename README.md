@@ -1,6 +1,9 @@
 # Goth-Tools
 goth tools are tools that I created to learn, these are not professional tools and are purely just tools I created for experience
 
+## what does goth stand for
+Good orginized tool helper. it was originally named after the gothic style, usualy the menbers are called goths, so i made goth-tools, but its also isnt satanic or has any satanic refrence/connection to it. 
+
 ## how to use goth tools?
 
 first, open the terminal, then run this command
